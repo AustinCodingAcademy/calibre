@@ -13,7 +13,7 @@ from contextlib import closing
 
 is64bit = platform.architecture()[0] == '64bit'
 # DLURL = 'https://calibre-ebook.com/dist/linux'+('64' if is64bit else '32')
-DLURL = 'https://download.calibre-ebook.com/2.85.1/calibre-2.85.1-x86_64.txz'
+DLURL = 'https://github.com/AustinCodingAcademy/calibre/raw/2.85.1/calibre-2.85.1-x86_64.txz'
 DLURL = os.environ.get('CALIBRE_INSTALLER_LOCAL_URL', DLURL)
 py3 = sys.version_info[0] > 2
 enc = getattr(sys.stdout, 'encoding', 'utf-8') or 'utf-8'
